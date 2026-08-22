@@ -1,13 +1,4 @@
-const express = require("express");
 const nodemailer = require("nodemailer");
-const path = require("path");
-require("dotenv").config();
-
-const app = express();
-
-app.use(express.json());
-
-app.use(express.static(__dirname));
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -17,7 +8,14 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-app.post("/api/contact", async (req, res) => {
+module.exports = async (req, res) => {
+
+  if (req.method !== "POST") {
+    return res.status(405).json({
+      message: "Method not allowed"
+    });
+  }
+
   try {
     const { name, email, subject, message } = req.body;
 
@@ -44,21 +42,16 @@ ${message}
       `
     });
 
-    res.status(200).json({
+    return res.status(200).json({
       message: "Message sent successfully!"
     });
 
   } catch (error) {
+
     console.error("Email error:", error);
 
-    res.status(500).json({
+    return res.status(500).json({
       message: "Failed to send message."
     });
   }
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+};
