@@ -215,7 +215,10 @@
       
       <!-- Project Tabs Navigation -->
       <div class="project-tabs">
-        <button class="tab-btn active" data-tab="tab-todo">
+        <button class="tab-btn active" data-tab="tab-whis">
+          <i class="fas fa-microphone-alt"></i> Whis AI Voice Agent
+        </button>
+        <button class="tab-btn" data-tab="tab-todo">
           <i class="fas fa-list-check"></i> Todo App (Static Live)
         </button>
         <button class="tab-btn" data-tab="tab-calc">
@@ -229,20 +232,192 @@
       <!-- Projects Tab Contents -->
       <div class="tab-content-container">
 
+          <!-- Whis AI Voice Agent Tab -->
+<div class="tab-content active" id="tab-whis">
+
+  <div class="project-layout-grid">
+
+    <!-- Project Details -->
+    <div class="project-details">
+
+      <h3>
+        <i class="fas fa-microphone-alt"></i>
+        Whis - AI Desktop Voice Agent
+      </h3>
+
+      <p class="proj-desc">
+        Whis is an AI-powered desktop voice agent built with Python and
+        LiveKit. It enables real-time voice conversations and can search
+        the web, understand the screen, control applications, and perform
+        Windows system operations.
+      </p>
+
+      <div class="tech-used">
+        <span>Python</span>
+        <span>LiveKit</span>
+        <span>Deepgram STT</span>
+        <span>Google Gemini</span>
+        <span>Inworld TTS</span>
+        <span>Tavily Search</span>
+        <span>PyAutoGUI</span>
+      </div>
+
+      <div class="whis-features">
+
+        <div class="whis-feature">
+          <i class="fas fa-microphone"></i>
+          <span>Real-time Voice Interaction</span>
+        </div>
+
+        <div class="whis-feature">
+          <i class="fas fa-brain"></i>
+          <span>AI-powered Conversations</span>
+        </div>
+
+        <div class="whis-feature">
+          <i class="fas fa-globe"></i>
+          <span>Real-time Web Search</span>
+        </div>
+
+        <div class="whis-feature">
+          <i class="fas fa-eye"></i>
+          <span>AI Screen Understanding</span>
+        </div>
+
+        <div class="whis-feature">
+          <i class="fas fa-desktop"></i>
+          <span>Windows Application Control</span>
+        </div>
+
+        <div class="whis-feature">
+          <i class="fas fa-lock"></i>
+          <span>System Operations</span>
+        </div>
+
+      </div>
+
+      <a
+        href="YOUR_GITHUB_REPO_URL"
+        target="_blank"
+        class="github-project-link"
+      >
+        <i class="fab fa-github"></i>
+        View Whis Source Code
+      </a>
+
+    </div>
+
+
+    <!-- Whis Architecture Display -->
+    <div class="live-widget-container whis-widget-wrapper">
+
+      <div class="whis-agent-box">
+
+        <div class="whis-header">
+
+          <div class="whis-status-dot"></div>
+
+          <div>
+            <h4>WHIS AI AGENT</h4>
+            <p>Desktop Voice Intelligence System</p>
+          </div>
+
+        </div>
+
+
+        <div class="voice-visualizer">
+
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+          <div class="voice-bar"></div>
+
+        </div>
+
+
+        <div class="agent-pipeline">
+
+          <div class="pipeline-step">
+            🎙️
+            <span>Voice Input</span>
+          </div>
+
+          <div class="pipeline-arrow">↓</div>
+
+          <div class="pipeline-step">
+            📝
+            <span>Speech-to-Text</span>
+          </div>
+
+          <div class="pipeline-arrow">↓</div>
+
+          <div class="pipeline-step">
+            🧠
+            <span>AI Reasoning</span>
+          </div>
+
+          <div class="pipeline-arrow">↓</div>
+
+          <div class="pipeline-step">
+            🔊
+            <span>Voice Response</span>
+          </div>
+
+        </div>
+
+
+        <div class="whis-performance">
+
+          <div>
+            <span class="metric-value">3–4%</span>
+            <span class="metric-label">Idle CPU</span>
+          </div>
+
+          <div>
+            <span class="metric-value">Live</span>
+            <span class="metric-label">Voice Pipeline</span>
+          </div>
+
+          <div>
+            <span class="metric-value">AI</span>
+            <span class="metric-label">Desktop Control</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
         <!-- Todo Project Tab -->
-        <div class="tab-content active" id="tab-todo">
+        <div class="tab-content" id="tab-todo">
           <div class="project-layout-grid">
             <div class="project-details">
               <h3>Todo App Dashboard</h3>
               <p class="proj-desc">
-                A task tracking dashboard showing basic full-stack styling from my repository. 
-                Normally connected to a Spring Boot backend, this live demonstration stores data in your browser local storage.
+                <p class="proj-desc">
+  A full-stack Todo Application built using Spring Boot, Spring Security,
+  JWT Authentication, MySQL, HTML, CSS, and JavaScript. Features secure
+  user registration and login, user-specific task management, and REST APIs.
+  This portfolio demo uses LocalStorage to provide an interactive client-side preview.
+</p>
               </p>
               <div class="tech-used">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Local Storage Mock API</span>
+                <span>Spring Boot</span>
+    <span>Spring Security</span>
+    <span>JWT</span>
+    <span>MySQL</span>
+    <span>REST APIs</span>
+    <span>HTML/CSS/JS</span>
               </div>
               <a href="https://github.com/SUNDAR-R9988/Todo-App" target="_blank" class="github-project-link">
                 <i class="fab fa-github"></i> View Repository Code
